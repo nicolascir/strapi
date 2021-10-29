@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "homepage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pizzas": {
+      "collection": "pizza"
+    },
+    "Header": {
+      "type": "richtext",
+      "default": "C'est tout ca qu'on propose"
+    }
+  }
+}

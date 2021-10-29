@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commandes",
+  "info": {
+    "name": "commande",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "num": {
+      "type": "uid"
+    },
+    "started": {
+      "type": "datetime"
+    },
+    "pizzas": {
+      "collection": "pizza"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Statut": {
+      "type": "enumeration",
+      "enum": [
+        "commandee",
+        "preparation",
+        "livree",
+        "succes",
+        "echecAnnulation"
+      ],
+      "default": "commandee"
+    }
+  }
+}

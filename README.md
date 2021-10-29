@@ -1,2 +1,3 @@
-# strapi
-Découverte d'une api en utilisant un site commercial
+# Strapi application
+
+A quick description of your strapi application
